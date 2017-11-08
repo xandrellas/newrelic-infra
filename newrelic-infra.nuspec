@@ -5,7 +5,7 @@
 <version>0.0.1</version>
 <title>newrelic-infra (Install)</title>
 <authors>xandrellas</authors>
-<projectUrl></projectUrl>
+<projectUrl>https://github.com/xandrellas/newrelic-infra.git</projectUrl>
 <requireLicenseAcceptance>false</requireLicenseAcceptance>
 <tags>newrelic-infra newrelic</tags>
 <summary>Chocolatey installer for windows newrelic-infra</summary>
