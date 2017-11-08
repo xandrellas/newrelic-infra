@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+<metadata>
+<id>newrelic-infra</id>
+<version>0.0.1</version>
+<title>newrelic-infra (Install)</title>
+<authors>xandrellas</authors>
+<projectUrl></projectUrl>
+<requireLicenseAcceptance>false</requireLicenseAcceptance>
+<tags>newrelic-infra newrelic</tags>
+<summary>Chocolatey installer for windows newrelic-infra</summary>
+<description>installer for windows newrelic-infra</description>
+</metadata>
+<files>
+<file src="tools\**" target="tools" />
+</files>
+</package>
