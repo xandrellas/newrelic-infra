@@ -1,8 +1,7 @@
-﻿
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.msi'
-$url64      = 'https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.msi'
+$url        = 'https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.1.0.818.msi'
+$url64      = 'https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.1.0.818.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +12,9 @@ $packageArgs = @{
 
   softwareName  = 'newrelic-infra*'
 
-  checksum      = '35fe650cf958ef93b993cae7c8ffdfb463d5119280604b4e10804c9bd5d0bdce'
+  checksum      = '94aaed72457c8c7dfedb1cb22d592368fa9a4e1a6f807f9fc284ecbec23b87a6'
   checksumType  = 'sha256'
-  checksum64    = '35fe650cf958ef93b993cae7c8ffdfb463d5119280604b4e10804c9bd5d0bdce'
+  checksum64    = '94aaed72457c8c7dfedb1cb22d592368fa9a4e1a6f807f9fc284ecbec23b87a6'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
@@ -23,22 +22,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
